@@ -1,0 +1,49 @@
+-- INSERT INTO books (title, author, year, price) 
+-- VALUES 
+-- 	('O''tkan kunlar', 'Abdulla Qodiriy', 1926, 50000),
+-- 	('Sariq devni minib', 'Xudoyberdi Toxtaboyev', 1968, 35000),
+-- 	('Shaytanat', 'Tohir Malik', 1992, 80000),
+-- 	('Ikki eshik orasi', 'O''tkir Hoshimov', 1986, 45000),
+-- 	('Dunyoning ishlari', 'O''tkir Hoshimov', 1982, 30000);
+-- 
+-- SELECT * FROM books;
+
+-- INSERT INTO students (name, age, major, gpa) 
+-- VALUES 
+-- 	('Ali Valiev', 20, 'Dasturlash', 3.8),
+-- 	('Olim Toshov', 21, 'Iqtisodiyot', 3.5),
+-- 	('Zuhra Akramova', 19, 'Tibbiyot', 4.0),
+-- 	('Sardor Rahimiv', 22, 'Matematika', 3.2),
+-- 	('Madina Karimoava', 20, 'Filologiya', 3.9);
+-- 
+-- SELECT * FROM students;
+
+-- INSERT INTO products (name, category, quantity, price)
+--  VALUES 
+-- 	('iPhone 15', 'Elektronika', 10, 1200),
+-- 	('MacBook Air', 'Noutbuklar', 5, 1100),
+-- 	('Samsung S24', 'Elektronika', 15, 1000),
+-- 	('AirPods Pro', 'Aksessuarlar', 20, 250),
+-- 	('iPad Pro', 'Planshetlar', 8, 900);
+-- 
+-- SELECT * FROM products;
+
+-- INSERT INTO orders (customer_name, product_name, quantity, order_date) 
+-- VALUES 
+-- 	('Aziz Berdiyev', 'Monitor', 1, '2024-03-01'),
+-- 	('Nodira Isayeva', 'Sichqoncha', 2, '2024-03-02'),
+-- 	('Jasur Alimov', 'Klaviatura', 1, '2024-03-03'),
+-- 	('Malika Axmedova', 'Printer', 1, '2024-03-04'),
+-- 	('Rustam Karimov', 'USB Hub', 3, '2024-03-05');
+-- 
+-- SELECT * FROM orders;
+
+-- INSERT INTO movies (name, genre, release_year, rating) 
+-- VALUES 
+-- 	('The Fast and the Furious', 'Action Crime', 2010, 9.5),
+-- 	('The Dark Knight', 'Action', 2008, 9.0),
+-- 	('Hudo asrasin', 'Comedy', 2025, 10),
+-- 	('Bad boys', 'Action Comedy', 1995, 9.8),
+-- 	('Transformers', 'Fantastic', 2007, 9.6);
+-- 
+-- SELECT * FROM movies;
