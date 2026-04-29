@@ -1,0 +1,98 @@
+INSERT INTO citys (city, country, postcode)
+ VALUES
+	('Samarqand', 'Uzbekistan', '140100'),
+	('Toshkent', 'Uzbekistan', '100000'),
+	('London', 'UK', 'EC1A 1BB'),
+	('Paris', 'France', '75001'), 
+	('Tokyo', 'Japan', '100-0001'),
+	('Rome', 'Italy', '00118'),
+	('Berlin', 'Germany', '10115'),
+	('New York', 'USA', '10001'),
+	('Samarqand', 'Uzbekistan', '140105'),
+	('Milan', 'category1', '20121');
+-- 
+-- SELECT * FROM citys WHERE country = 'country1';
+
+INSERT INTO books (name, author, category, price) 
+VALUES 
+	('Book1', 'author1', 'category1', 50.0),
+	('Book2', 'author1', 'category2', 30.0),
+	('Book3', 'author2', 'category1', 45.0),
+	('Book4', 'author3', 'category3', 100.0),
+	('Book5', 'author1', 'category1', 25.0),
+	('Book6', 'author4', 'category2', 60.0),
+	('Book7', 'author2', 'category1', 75.0),
+	('Book8', 'author5', 'category3', 15.0),
+	('Book9', 'author1', 'category1', 55.0),
+	('Book10', 'author3', 'category2', 85.0);
+-- 
+-- SELECT * FROM books WHERE author = 'author1';
+
+-- INSERT INTO users (name, last_name, age)
+-- VALUES
+-- 	('Mirzohid', 'Xusainov', 15),
+-- 	('Farrux', 'Polvanov', 25),
+-- 	('Muhammad', 'Otabayev', 16),
+-- 	('Ali', 'Valiyev', 25),
+-- 	('Otabek', 'Bekpolatov', 12);
+	
+-- SELECT * FROM users WHERE age = 25;
+-- 
+-- SELECT name, age FROM users WHERE age = 25;
+-- 
+-- SELECT name, last_name FROM users WHERE id = 3;
+-- 
+-- SELECT avg(price) FROM books;
+-- 
+-- SELECT avg(price) FROM books WHERE author = 'author1';
+-- 
+-- SELECT avg(price) FROM books WHERE category = 'category1';
+
+-- SELECT avg(postcode) FROM citys;
+
+-- SELECT avg(postcode) FROM citys WHERE country = 'category1';
+
+-- SELECT SUM(price) FROM books;
+
+-- SELECT SUM(price) FROM books WHERE author = 'author1';
+-- 
+-- SELECT SUM(price) FROM books WHERE category = 'category1';
+-- 
+-- SELECT SUM(price) FROM books WHERE author = 'author1' AND category = 'category1';
+
+-- SELECT * FROM citys WHERE country = 'category1' LIMIT 2;
+
+-- SELECT * FROM citys WHERE id > 4 LIMIT 2 OFFSET 1;
+-- 
+-- SELECT * FROM citys WHERE postcode < 12345 LIMIT 5;
+-- 
+-- SELECT * FROM citys WHERE country = 'category1' LIMIT 1 OFFSET 2;
+
+-- SELECT * FROM books WHERE category = 'category1' LIMIT 4 OFFSET 3;
+-- 
+-- SELECT * FROM books WHERE author = 'author1' LIMIT 6;
+-- 
+-- SELECT * FROM books ORDER BY price ASC LIMIT 5;
+-- 
+-- SELECT * FROM books ORDER BY price DESC LIMIT 3;
+-- 
+-- SELECT * FROM books ORDER BY price DESC LIMIT 7 OFFSET 3;
+
+-- SELECT min(min_salary) FROM jobs;
+-- 
+-- SELECT max(min_salary) FROM jobs;
+-- 
+-- SELECT min(max_salary) FROM jobs;
+-- 
+-- SELECT max(max_salary) FROM jobs;
+
+-- SELECT * FROM jobs
+-- ORDER BY max_salary DESC
+-- LIMIT 5;
+
+-- SELECT * FROM countries
+-- WHERE region_id = 4
+-- ORDER BY country_name ASC;
+
+-- SELECT * FROM countries
+-- ORDER BY country_id ASC, country_name ASC;
