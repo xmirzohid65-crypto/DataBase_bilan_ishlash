@@ -1,0 +1,53 @@
+SELECT first_name, last_name FROM students WHERE first_name ~* '^[AEIOU]'
+UNION
+SELECT first_name, last_name FROM teachers WHERE first_name ~* '^[AEIOU]';
+
+SELECT first_name, last_name FROM students
+UNION
+SELECT first_name, last_name FROM teachers
+ORDER BY LENGTH(last_name) ASC, last_name ASC;
+
+SELECT first_name, last_name, 'talaba' AS manba FROM students
+UNION
+SELECT first_name, last_name, 'o''qituvchi' AS manba FROM teachers
+ORDER BY manba, last_name;
+
+(SELECT id, first_name, last_name FROM students ORDER BY id DESC LIMIT 3)
+UNION
+(SELECT id, first_name, last_name FROM teachers ORDER BY id DESC LIMIT 3)
+ORDER BY id DESC;
+
+SELECT product_name, quantity FROM orders
+INTERSECT
+SELECT product_name, quantity FROM shipments;
+
+SELECT product_name, quantity FROM orders WHERE quantity >= 5
+INTERSECT
+SELECT product_name, quantity FROM shipments WHERE quantity >= 5;
+
+SELECT order_id, product_name, quantity FROM orders
+INTERSECT
+SELECT order_id, product_name, quantity FROM shipments;
+
+SELECT shipment_id, product_name, quantity FROM orders
+INTERSECT
+SELECT shipment_id, product_name, quantity FROM shipments
+ORDER BY product_name ASC;
+
+SELECT product_name FROM orders
+EXCEPT
+SELECT product_name FROM shipments;
+
+SELECT product_name FROM shipments
+EXCEPT
+SELECT product_name FROM orders
+ORDER BY product_name ASC;
+
+SELECT order_id FROM orders WHERE order_id >= 10
+EXCEPT
+SELECT order_id FROM shipments;
+
+SELECT shipment_id, quantity FROM shipments WHERE quantity < 5
+EXCEPT
+SELECT shipment_id, quantity FROM orders
+ORDER BY quantity DESC;

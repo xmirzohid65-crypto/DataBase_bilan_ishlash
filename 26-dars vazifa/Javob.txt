@@ -1,0 +1,29 @@
+1-savol: HR tizimida xodimlar va bo'limlar jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? ---ManyToOne
+
+2-savol: Musiqa striming platformasida srtistlar va pleylistlar jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? ---ManyToMany
+
+3-savol: Onlayn kutubxona tizimida kitoblar va mualliflar jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? ---ManyToMany
+
+4-savol: Avtomobil ijarasi tizimida avtomashinalar va davlat raqamlari jadvallari mavjud, ular o'rtasida qanday bog'liqlik bor? ---OneToOne
+
+5-savol: Loyihani boshqarish tizimida vazifalar va loyiha menejerlari jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? ---ManyToOne
+
+6-savol: Autentifikatsiya tizimida foydalanuvchi hisoblari va elektron pochta manzillari jadvallari mavjud, ular o'rtasidagi bog'liqlik qanday? ---OneToOne
+
+7-savol: Sog'liqni saqlash tizimida bemorlar va shifokorlar jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? ---ManyToMany
+
+8-savol: Konferentsiyani boshqarish tizimida ishtirokchilar va sessiyalar jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? ---ManyToMany
+
+9-savol: Elektron tijorat tizimida buyurtmalar va mijozlar jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? ---ManyToOne
+
+10-savol: Ijtimoiy media platformasida foydalanuvchilar va postlar jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? ---OneToMany
+
+11-savol: Kontentni boshqarish tizimida veb-sahifalar va URL jadvallari mavjud, ular o'rtasidagi bog'liqlik qanday? ---OneToOne
+
+12-savol: Onlayn kurs platformasida talabalar va kurslar jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? --- ManyToMany
+
+13-savol: Inventarizatsiyani boshqarish tizimida mahsulotlar va mahsulot shtrix-kodlari jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? ---OneToOne
+
+14-savol: Kino ma'lumotlar bazasida filmlar va aktyorlar jadvallari mavjud, ular o'rtasidagi munosabatlar qanday? ---ManyToMany
+
+15-savol: Bank tizimida bank akkountlar va akkunt raqami jadvallari mavjud, ular o'rtasidagi bog'liqlik qanday? ---OneToMany
